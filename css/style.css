@@ -1,0 +1,143 @@
+@import url('https://fonts.googlepis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #16384c;
+}
+.hea{
+    display: inline-block;
+    background-color: cornsilk;
+    position: absolute;
+    top: 0;
+    left: 120px;    
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+.hea h1{
+    font-size: 100px;
+    font-weight: 600;
+}
+.hea h3{
+    font-size: 80px;
+    font-weight: 400;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    top: 150px;
+}
+.container h1{
+    color: #f6b93b;
+    text-align: center;
+    font-weight: 850;
+    font-size: 2em;
+    padding-bottom: 7px;
+}
+.container .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+    padding-bottom: 90px;
+}
+.container .card:hover{
+    height: 420px;
+}
+.container .card .imgbx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60;
+    left: 20px;
+    z-index: 1;
+}
+.container .card .imgbx img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3 ease-in-out;
+}
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: 40px;
+    transition-delay: 0.3s;
+}
+
+.answer{
+    text-align: center;
+    color: #FFF;
+    padding: 10px 30px;
+    font-size: 1.5em;
+    font-weight: 500;
+    border-radius: 20px;
+    visibility: hidden;
+}
+.answert{
+    visibility: visible;
+    background:green;
+}
+.answerf{
+    visibility: visible;
+    background: red;
+}
+
+.content p {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+#contactUs{
+    position: absolute;
+    display: flexbox;
+    right: 40px;
+    top: 1200px;
+    width: 30%;
+    background-color: gray;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+#contactUs h3{
+    font-size: 2.5em;
+    text-align: center;
+}
+#contactUs a{
+    position: relative;
+    display: inline-block;
+    right: -165px;
+    background: red;
+    color: #FFF;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: 1s;
+  }
+#contactUs a:hover{
+    right: -150px;
+    font-size: 1.4em;
+    border-radius: 40px;
+}
