@@ -109,8 +109,11 @@ alert(`Correct!!💯 im exactly 24 y.o 😄 and +1 to your score 🤩\n`+`Your s
 
 var answ = ['kamkazi', 'the eminem show', 'Recovery', 'the marshel mathers lp', 'music to be murderd']
 for (var i = 0; i < answ.length; i++ ){
-   var qus7 = prompt(`Seventh question: while im hip hop music edicted 🎧, witch 'Eminem' albums you think i like?🎤\n` + `*Answer can be one of 5 of my favorite albums\n`+`you are now at Level 3`).toLocaleLowerCase();
-   if (answ.includes(qus7)){
+   var qus7 = prompt(`Seventh question: while im hip hop music edicted 🎧, witch 'Eminem' albums you think i like?🎤\n` + `*Answer can be one of 5 of my favorite albums\n`+`*You only had 4 attebmts\n`+`you are now at Level 3`).toLocaleLowerCase();
+   if (i == answ.length && !answ.includes(qus7)){
+       alert(`im sory you are out of attempts.. :(`)
+       break;
+   }else if (answ.includes(qus7)){
     score = score + 1;
     alert(`Correct!!💯 ${uName}, ${qus7} is realy one of my favorite albums 🤗\n`+`witch is: ${answ}\n`+`and +1 to your score 🤩`)
     document.getElementById("answ7").classList.add("answert");
