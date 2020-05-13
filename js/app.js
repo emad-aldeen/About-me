@@ -29,7 +29,8 @@ if (qus1 == "yes" || qus1 == "y"){
     document.getElementById("answ1").innerText = 'Fulse☹️';
 }else {
     alert(`⛔️Pleaseee ⛔️ only ⛔️ 'yes' ⛔️ or ⛔️ 'no'⛔️`);
-    
+    document.getElementById("answ1").classList.add("answerf");
+    document.getElementById("answ1").innerText = 'Fulse☹️';
 };
 
 var qus2 = prompt(`Second Question: do you think im sheshah Smoker?🚭\n`+`*Answer Only "yes" OR "NO"`).toLowerCase();
@@ -45,7 +46,8 @@ if (qus2 == "no" || qus2 == "n"){
     document.getElementById("answ2").innerText = 'Fulse☹️';
 }else {
     alert(`⛔️Pleaseee ⛔️ only ⛔️ 'yes' ⛔️ or ⛔️ 'no'⛔️`);
-    
+    document.getElementById("answ2").classList.add("answerf");
+    document.getElementById("answ2").innerText = 'Fulse☹️';    
 };
 
 var qus3 = prompt(`Third Question: do you think im Speed as Flash?🚀\n`+`*Answer Only "yes" OR "NO"`).toLowerCase();
@@ -61,7 +63,8 @@ if (qus3 == "no" || qus3 == "n"){
     document.getElementById("answ3").innerText = 'Fulse☹️';
 }else {
     alert(`⛔️Pleaseee ⛔️ only ⛔️ 'yes' ⛔️ or ⛔️ 'no'⛔️`);
-    
+    document.getElementById("answ3").classList.add("answerf");
+    document.getElementById("answ3").innerText = 'Fulse☹️';    
 };
 
 var qus4 = prompt(`Fourth Question: am i Gym Lover?💪\n`+`*Answer Only "yes" OR "NO"`).toLowerCase();
@@ -77,7 +80,8 @@ if (qus4 == "no" || qus4 == "n"){
     document.getElementById("answ4").innerText = 'Fulse☹️';
 }else {
     alert(`⛔️Pleaseee ⛔️ only ⛔️ 'yes' ⛔️ or ⛔️ 'no'⛔️`);
-    
+    document.getElementById("answ4").classList.add("answerf");
+    document.getElementById("answ4").innerText = 'Fulse☹️';
 };
 
 var qus5 = prompt(`Fifth Question: am i Lonly Lover?🔒\n`+`*Answer Only "yes" OR "NO"`).toLowerCase();
@@ -93,7 +97,8 @@ if (qus5 == "yes" || qus5 == "y"){
     document.getElementById("answ5").innerText = 'Fulse☹️';
 }else {
     alert(`⛔️Pleaseee ⛔️ only ⛔️ 'yes' ⛔️ or ⛔️ 'no'⛔️`);
-    
+    document.getElementById("answ5").classList.add("answerf");
+    document.getElementById("answ5").innerText = 'Fulse☹️';
 };
 
 
@@ -109,9 +114,11 @@ alert(`Correct!!💯 im exactly 24 y.o 😄 and +1 to your score 🤩\n`+`Your s
 
 var answ = ['kamkazi', 'the eminem show', 'Recovery', 'the marshel mathers lp', 'music to be murderd']
 for (var i = 0; i < answ.length; i++ ){
-   var qus7 = prompt(`Seventh question: while im hip hop music edicted 🎧, witch 'Eminem' albums you think i like?🎤\n` + `*Answer can be one of 5 of my favorite albums\n`+`*You only had 4 attebmts\n`+`you are now at Level 3`).toLocaleLowerCase();
-   if (i == answ.length && !answ.includes(qus7)){
+   var qus7 = prompt(`Seventh question: while im hip hop music edicted 🎧, witch 'Eminem' albums you think i like?🎤\n` + `*Answer can be one of 5 of my favorite albums\n`+`*You only had 5 attebmts\n`+`you are now at Level 3`).toLocaleLowerCase();
+   if (i == 4 && !answ.includes(qus7)){
        alert(`im sory you are out of attempts.. :(`)
+       document.getElementById("answ7").classList.add("answerf");
+       document.getElementById("answ7").innerText = 'Fulse☹️';
        break;
    }else if (answ.includes(qus7)){
     score = score + 1;
