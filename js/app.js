@@ -12,7 +12,7 @@ if (ready === true){
     score = score + 1;
 }else{
     alert(`Im Sorry For That.. :( , Thanks 4 visiting us 💔`);
-    
+    location.reload();
 };
 
 
@@ -231,11 +231,16 @@ if (qus5 == "yes" || qus5 == "y"){
 function func6(){alert(`well .. this will start going harder 😼👌 becuse you are in \n`+`Level 2!`);
 while (qus6 != 24){
     var qus6 = prompt(`Sixth Question: how old you think i am??\n`+`*Answer can be any number..`);
-    qus6 >= 50 ? alert(`woow!! ${qus6} 😮, do i look that old!! 🥴`) : qus6 >= 30 && qus6 < 50 ? alert(`nope, thats too old for me 🙄 `) : qus6 >= 25 && qus6 < 30 ? alert(`you are a little bit high, But too close ${uName} 😃`) : qus6 <= 10 ? alert(`well.. i think babys these days still cant write codes.. 👶`) : qus6 <= 20 && qus6 > 10 ? alert(`alittle bit more 😃 ${uName}`) :alert(`Correct!!💯 im exactly 24 y.o 😄 and +1 to your score 🤩\n`+`Your score is ${score}, keep going 😃`);
+    qus6 >= 50 ? alert(`woow!! ${qus6} 😮, do i look that old!! 🥴`) : qus6 >= 30 && qus6 < 50 ? alert(`nope, thats too old for me 🙄 `) : qus6 >= 25 && qus6 < 30 ? alert(`you are a little bit high, But too close ${uName} 😃`) : qus6 <= 16 ? alert(`well.. i think babys these days still cant write codes.. 👶`) : qus6 <= 23 && qus6 > 16 ? alert(`alittle bit more 😃 ${uName}`) : ''
+};
+    score = (score + 1);
+    alert(`Correct!!💯 im exactly 24 y.o 😄 and +1 to your score 🤩\n`+`Your score is ${score}, keep going 😃`);
+    console.log(score);
     document.getElementById("answ6").classList.add("answert");
     document.getElementById("answ6").innerText = '👏Corect!!🎉';
-    score = score + 1;
-};};
+};
+
+
 var answ = ['kamkazi', 'the eminem show', 'Recovery', 'the marshel mathers lp', 'music to be murderd']
 
 function func7(){for (var i = 0; i < answ.length; i++ ){
@@ -264,7 +269,7 @@ function func7(){for (var i = 0; i < answ.length; i++ ){
     sec.classList.toggle('active');
     nav.classList.toggle('active');
 
-    var fulsSc = 8- score;
+    var fulsSc = 8 - score;
     var croSc = score ;
 document.getElementById("crAn").innerText = 'You Made '+ croSc +' Correct Answers';
 document.getElementById("fuAn").innerText = 'You Made '+ fulsSc +' Fulse Answers';
