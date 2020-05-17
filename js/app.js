@@ -274,3 +274,10 @@ function func7(){for (var i = 0; i < answ.length; i++ ){
 document.getElementById("crAn").innerText = 'You Made '+ croSc +' Correct Answers';
 document.getElementById("fuAn").innerText = 'You Made '+ fulsSc +' Fulse Answers';
 };
+
+func1();
+func2();
+func3();
+func4();
+func6();
+func7();
