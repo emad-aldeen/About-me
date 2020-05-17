@@ -182,7 +182,7 @@ body{
     transform: skew(2deg, 2deg);
     border-width: 80px;
     border-style: solid;
-    border-image-source: url(/img/border.png);
+    border-image-source: url(../img/border.png);
     border-image-slice: 50%;
     border-image-width: 100px;
     border-image-repeat: round;

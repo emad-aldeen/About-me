@@ -163,7 +163,8 @@ if (qus1 == "yes" || qus1 == "y"){
     document.getElementById("answ1").innerText = 'Fulse☹️';
 }else {
     alert(`⛔️Pleaseee ⛔️ only ⛔️ 'yes' ⛔️ or ⛔️ 'no'⛔️`);
-    
+    document.getElementById("answ1").classList.add("answerf");
+    document.getElementById("answ1").innerText = 'Fulse☹️';
 };};
 
 function func2(){var qus2 = prompt(`Second Question: do you think im sheshah Smoker?🚭           *Answer Only "yes" OR "NO"`).toLowerCase();
@@ -179,7 +180,8 @@ if (qus2 == "no" || qus2 == "n"){
     document.getElementById("answ2").innerText = 'Fulse☹️';
 }else {
     alert(`⛔️Pleaseee ⛔️ only ⛔️ 'yes' ⛔️ or ⛔️ 'no'⛔️`);
-    
+    document.getElementById("answ2").classList.add("answerf");
+    document.getElementById("answ2").innerText = 'Fulse☹️';    
 };};
 
 function func3(){var qus3 = prompt(`Third Question: do you think im Speed as Flash?🚀           *Answer Only "yes" OR "NO"`).toLowerCase();
@@ -194,7 +196,8 @@ if (qus3 == "no" || qus3 == "n"){
     document.getElementById("answ3").innerText = 'Fulse☹️';
 }else {
     alert(`⛔️Pleaseee ⛔️ only ⛔️ 'yes' ⛔️ or ⛔️ 'no'⛔️`);
-    
+    document.getElementById("answ3").classList.add("answerf");
+    document.getElementById("answ3").innerText = 'Fulse☹️';
 };};
 
 function func4(){var qus4 = prompt(`Fourth Question: am i Gym Lover?💪  *Answer Only "yes" OR "NO"`).toLowerCase();
@@ -210,6 +213,8 @@ if (qus4 == "no" || qus4 == "n"){
     document.getElementById("answ4").innerText = 'Fulse☹️';
 }else {
     alert(`⛔️Pleaseee ⛔️ only ⛔️ 'yes' ⛔️ or ⛔️ 'no'⛔️`);
+    document.getElementById("answ4").classList.add("answerf");
+    document.getElementById("answ4").innerText = 'Fulse☹️';
 };};
 
 function func5(){var qus5 = prompt(`Fifth Question: am i Lonly Lover?🔒  *Answer Only "yes" OR "NO"`).toLowerCase();
@@ -226,6 +231,8 @@ if (qus5 == "yes" || qus5 == "y"){
     document.getElementById("answ5").innerText = 'Fulse☹️';
 }else {
     alert(`⛔️Pleaseee ⛔️ only ⛔️ 'yes' ⛔️ or ⛔️ 'no'⛔️`);
+    document.getElementById("answ5").classList.add("answerf");
+    document.getElementById("answ5").innerText = 'Fulse☹️';
 };};
 
 function func6(){alert(`well .. this will start going harder 😼👌 becuse you are in \n`+`Level 2!`);
