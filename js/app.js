@@ -14,7 +14,7 @@ if (ready === true){
     alert(`Im Sorry For That.. :( , Thanks 4 visiting us 💔`);
     location.reload();
 };
-
+//i did it
 
 /*var qus1 = prompt(`First Question: do you think im good car driver?\n`+`*Answer Only "yes"  OR "NO"`).toLowerCase();
 console.log(`First Question Answer was: ${qus1}`);
